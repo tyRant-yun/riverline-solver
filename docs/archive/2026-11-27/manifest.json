@@ -1,0 +1,36 @@
+{
+  "schema": "riverline-document-archive/1",
+  "date": "2026-11-27",
+  "sourceCommit": "6569a01cbe57cf109c4bd240a415fa31d5931a7b",
+  "policy": "Original historical document bytes retained; current entrypoints are separate.",
+  "records": [
+    {
+      "oldPath": "README.md",
+      "archivePath": "docs/archive/2026-11-27/entrypoints/README.before-consolidation.md",
+      "sourceCommit": "6569a01cbe57cf109c4bd240a415fa31d5931a7b",
+      "originalGitSha256": "d9a0a5ddb95374b09995c84356a124a9a1a70a4e591da2e6266e4953c7d9a24b",
+      "archiveSha256": "d9a0a5ddb95374b09995c84356a124a9a1a70a4e591da2e6266e4953c7d9a24b"
+    },
+    {
+      "oldPath": "AGENTS.md",
+      "archivePath": "docs/archive/2026-11-27/entrypoints/AGENTS.before-consolidation.md",
+      "sourceCommit": "6569a01cbe57cf109c4bd240a415fa31d5931a7b",
+      "originalGitSha256": "fae687ac3dc1d787c92f8aff4c5b63ccf9ff0c9c37ebcd1491774a29fa81ba3d",
+      "archiveSha256": "fae687ac3dc1d787c92f8aff4c5b63ccf9ff0c9c37ebcd1491774a29fa81ba3d"
+    },
+    {
+      "oldPath": "engines/postflop/THIRD_PARTY.md",
+      "archivePath": "docs/archive/2026-11-27/entrypoints/THIRD_PARTY.before-consolidation.md",
+      "sourceCommit": "6569a01cbe57cf109c4bd240a415fa31d5931a7b",
+      "originalGitSha256": "c89a8841bd87a55f17c034ac021479422b5cffc7a66d9bfb0740ba2847bf61bd",
+      "archiveSha256": "c89a8841bd87a55f17c034ac021479422b5cffc7a66d9bfb0740ba2847bf61bd"
+    },
+    {
+      "oldPath": "docs/BASELINE-ACCEPTANCE-2026-11-27.md",
+      "archivePath": "docs/archive/2026-11-27/BASELINE-ACCEPTANCE-2026-11-27.md",
+      "sourceCommit": "6569a01cbe57cf109c4bd240a415fa31d5931a7b",
+      "originalGitSha256": "8a7ae0b623800c2bcbe5c0e3732c5370adece96bd9673f9bcb3aedd90ff9d5b1",
+      "archiveSha256": "8a7ae0b623800c2bcbe5c0e3732c5370adece96bd9673f9bcb3aedd90ff9d5b1"
+    }
+  ]
+}
