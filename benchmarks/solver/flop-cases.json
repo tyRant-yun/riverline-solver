@@ -1,0 +1,147 @@
+{
+  "model": "isolated HU flop, one fixed bet per player/street, no raises",
+  "limits": {
+    "maxIterations": 10000,
+    "targetExploitability": 0.005,
+    "maxMemoryBytes": 268435456,
+    "maxSeconds": 60
+  },
+  "thresholds": {
+    "rootValueBb": 0.001,
+    "actionEvBb": 0.001,
+    "equity": 2e-06,
+    "nashConvBb": 0.001
+  },
+  "cases": [
+    {
+      "schemaVersion": 5,
+      "caseId": "F01-checkdown",
+      "board": [
+        "2c",
+        "7d",
+        "Jh"
+      ],
+      "pot": 200,
+      "stack": 2000,
+      "ranges": [
+        {
+          "AcAd": 1,
+          "KhKd": 0.4
+        },
+        {
+          "AsAh": 0.5,
+          "QcQd": 1
+        }
+      ],
+      "flopBets": [
+        0,
+        0
+      ],
+      "turnBets": [
+        0,
+        0
+      ],
+      "riverBets": [
+        0,
+        0
+      ]
+    },
+    {
+      "schemaVersion": 5,
+      "caseId": "F02-flop-bet",
+      "board": [
+        "2c",
+        "7d",
+        "Jh"
+      ],
+      "pot": 200,
+      "stack": 2000,
+      "ranges": [
+        {
+          "AcAd": 1,
+          "6c5c": 0.8
+        },
+        {
+          "KcKd": 1,
+          "AhQh": 0.7
+        }
+      ],
+      "flopBets": [
+        100,
+        0
+      ],
+      "turnBets": [
+        0,
+        0
+      ],
+      "riverBets": [
+        0,
+        0
+      ]
+    },
+    {
+      "schemaVersion": 5,
+      "caseId": "F03-allin",
+      "board": [
+        "5c",
+        "6d",
+        "7h"
+      ],
+      "pot": 600,
+      "stack": 300,
+      "ranges": [
+        {
+          "AcAd": 1,
+          "8c9c": 0.6
+        },
+        {
+          "KhKd": 1,
+          "8h9h": 0.7
+        }
+      ],
+      "flopBets": [
+        300,
+        0
+      ],
+      "turnBets": [
+        0,
+        0
+      ],
+      "riverBets": [
+        0,
+        0
+      ]
+    },
+    {
+      "schemaVersion": 5,
+      "caseId": "F04-three-street",
+      "board": [
+        "9h",
+        "8h",
+        "2c"
+      ],
+      "pot": 200,
+      "stack": 2000,
+      "ranges": [
+        {
+          "JhTh": 1
+        },
+        {
+          "AcAd": 1
+        }
+      ],
+      "flopBets": [
+        100,
+        100
+      ],
+      "turnBets": [
+        100,
+        100
+      ],
+      "riverBets": [
+        100,
+        100
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "maxItems": 24,
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "const": "action"
+          },
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 128
+          }
+        },
+        "required": [
+          "kind",
+          "index"
+        ],
+        "additionalProperties": false
+      },
+      {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "const": "deal"
+          },
+          "card": {
+            "type": "string",
+            "pattern": "^[2-9TJQKA][cdhs]$"
+          }
+        },
+        "required": [
+          "kind",
+          "card"
+        ],
+        "additionalProperties": false
+      }
+    ]
+  }
+}

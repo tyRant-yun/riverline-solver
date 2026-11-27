@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "definition": "river-explicit-tree-independent-v1",
+  "distribution": "product input weights conditioned on disjoint private cards and board",
+  "thresholds": {"frequencySum": 0.00001, "evBb": 0.00001, "metricBb": 0.00001, "nashConvPotFraction": 0.001, "valuePotFraction": 0.001},
+  "limits": {"maxIterations": 100000, "targetExploitability": 0.001, "maxMemoryBytes": 268435456, "maxSeconds": 120},
+  "cases": [
+    {"caseId":"river-two-sizes-ip-bet","board":["2c","3d","7h","9s","Jc"],"pot":1000,"stack":2000,"ranges":[{"AcAd":1,"5c4c":1},{"KhKd":1,"8c8d":1}],"treeLines":[[{"kind":"bet","amount":500}],[{"kind":"bet","amount":1000}],[{"kind":"check"},{"kind":"bet","amount":500}]],"locks":[]},
+    {"caseId":"river-raise-reraise","board":["2c","3d","7h","9s","Jc"],"pot":1000,"stack":2000,"ranges":[{"AcAd":1,"5c4c":1},{"KhKd":1,"8c8d":1}],"treeLines":[[{"kind":"bet","amount":500}],[{"kind":"bet","amount":500},{"kind":"raise","amount":1000}],[{"kind":"bet","amount":500},{"kind":"raise","amount":1000},{"kind":"all-in","amount":2000}]],"locks":[]},
+    {"caseId":"river-ip-bet-blockers","board":["2c","3d","7h","9s","Jc"],"pot":1400,"stack":2100,"ranges":[{"AcAd":0.7,"KhQc":0.6,"5c4c":0.3},{"AcKc":0.5,"KhKd":1}],"treeLines":[[{"kind":"bet","amount":700}],[{"kind":"check"},{"kind":"bet","amount":1400}]],"locks":[]},
+    {"caseId":"river-short-allin-tie","board":["Tc","Jc","Qc","Kc","Ac"],"pot":1000,"stack":800,"ranges":[{"2h2d":1,"3h3d":0.3},{"4h4d":1,"5h5d":0.8}],"treeLines":[[{"kind":"bet","amount":500}],[{"kind":"bet","amount":500},{"kind":"all-in","amount":800}]],"locks":[]},
+    {"caseId":"river-root-mixed-lock","board":["2c","3d","7h","9s","Jc"],"pot":1000,"stack":2000,"ranges":[{"AcAd":1,"5c4c":1},{"KhKd":1,"8c8d":1}],"treeLines":[[{"kind":"bet","amount":500}],[{"kind":"check"},{"kind":"bet","amount":500}]],"locks":[{"path":[],"allocations":{"AcAd":[0.75,0.25]}}]},
+    {"caseId":"river-interior-mixed-lock","board":["2c","3d","7h","9s","Jc"],"pot":1000,"stack":2000,"ranges":[{"AcAd":1,"5c4c":1},{"KhKd":1,"8c8d":1}],"treeLines":[[{"kind":"bet","amount":500}],[{"kind":"bet","amount":500},{"kind":"raise","amount":1000}],[{"kind":"bet","amount":500},{"kind":"raise","amount":1000},{"kind":"all-in","amount":2000}]],"locks":[{"path":[1,2],"allocations":{"AcAd":[0.1,0.2,0.7]}}]}
+  ]
+}

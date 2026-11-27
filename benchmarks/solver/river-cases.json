@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "definition": "river-independent-v1",
+  "unit": "bb",
+  "distribution": "product input weights conditioned on disjoint private cards and board",
+  "thresholds": { "frequencySum": 0.00001, "terminalEvBb": 0.00001, "nashConvPotFraction": 0.001, "valuePotFraction": 0.001 },
+  "limits": { "maxIterations": 100000, "targetExploitability": 0.001, "maxMemoryBytes": 2147483648, "maxSeconds": 600 },
+  "cases": [
+    { "caseId": "river-polar-pot", "board": ["2c","3d","7h","9s","Jc"], "pot": 1000, "stack": 1000, "ranges": [{"AcAd":1,"5c4c":1},{"KhKd":1,"8c8d":1}], "sizes": [["100%",""],["",""]] },
+    { "caseId": "river-asymmetric-half", "board": ["2c","3d","7h","9s","Jc"], "pot": 1000, "stack": 1600, "ranges": [{"AcAd":0.7,"5c4c":0.3,"QcQd":0.8},{"KhKd":0.3,"8c8d":1}], "sizes": [["50%",""],["",""]] },
+    { "caseId": "river-blockers", "board": ["2c","3d","7h","9s","Jc"], "pot": 1400, "stack": 2000, "ranges": [{"AcAd":1,"5c4c":0.4,"KhQc":0.6},{"AcKc":0.5,"KhKd":1,"8c8d":0.8}], "sizes": [["75%",""],["",""]] },
+    { "caseId": "river-board-tie", "board": ["Tc","Jc","Qc","Kc","Ac"], "pot": 1000, "stack": 1000, "ranges": [{"2h2d":1,"3h3d":0.3},{"4h4d":1,"5h5d":0.8}], "sizes": [["100%",""],["",""]] }
+  ]
+}

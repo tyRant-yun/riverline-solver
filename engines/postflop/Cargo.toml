@@ -1,0 +1,12 @@
+[workspace]
+members = ["crates/riverline-solver"]
+resolver = "2"
+
+[workspace.dependencies]
+postflop-solver = { git = "https://github.com/b-inary/postflop-solver", rev = "9d1509fe5077d019825f833eed04b16d342dfda1", default-features = false, features = ["bincode"] }
+# The upstream API uses the pre-release Decode trait without a context parameter.
+bincode = "=2.0.0-rc.3"
+bincode_derive = "=2.0.0-rc.3"
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.145"
+sha2 = "=0.10.9"

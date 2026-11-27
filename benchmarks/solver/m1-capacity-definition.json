@@ -1,0 +1,15 @@
+{
+  "version": "m1-turn-capacity/1",
+  "schemaVersion": 4,
+  "sizes": [16, 32, 64, 128, 200],
+  "limits": {"maxIterations": 100000, "targetExploitability": 0.5, "maxMemoryBytes": 268435456, "maxSeconds": 120},
+  "quality": "NashConv / starting pot <= 0.001; exploitability is half NashConv; fixed 0.5 centibb threshold at pot 1000, never relaxed after measurements",
+  "rangeConstruction": "All legal combos in rank-descending cdhs order, permuted by coprime stride 337, offsets 17/191 per player. Every 7th weight 0.25, every 3rd 0.6, otherwise 1. Seedless, nested prefixes at each size, overlapping non-identical ranges. Materialized inputs and hashes saved before execution.",
+  "boards": [
+    {"id":"rainbow","board":["2c","7d","Jh","9s"],"pot":1000,"stack":2000,"turnBets":[500,500],"riverBets":[700,700]},
+    {"id":"two-tone","board":["Ts","8s","3d","Kc"],"pot":1000,"stack":3000,"turnBets":[650,650],"riverBets":[900,900]}
+  ],
+  "checkdown": {"size":64,"board":["2c","7d","Jh","9s"],"pot":1000,"stack":2000,"turnBets":[0,0],"riverBets":[0,0]},
+  "oracleThresholds": {"evBb":0.00001,"equity":0.000001,"probability":0.000001},
+  "reader": {"maxRows":100,"maxOutputBytes":131072,"maxMilliseconds":5000,"maxNativeBytes":67108864,"maxConcurrentAcrossStreets":2,"productCombos":128}
+}

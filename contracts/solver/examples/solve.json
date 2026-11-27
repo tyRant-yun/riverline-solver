@@ -1,0 +1,10 @@
+{
+  "protocolVersion": "riverline-engine/1",
+  "operation": "solve",
+  "identity": {
+    "requestId": "request-1",
+    "jobId": "job-1",
+    "attempt": 1,
+    "specHash": "0000000000000000000000000000000000000000000000000000000000000000"
+  }
+}

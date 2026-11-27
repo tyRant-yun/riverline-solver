@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "definition": "turn-one-bet-per-side-street-independent-sequence-v1",
+  "thresholds": {"frequencySum": 0.00001, "evBb": 0.00001, "nashConvPotFraction": 0.001, "valuePotFraction": 0.001},
+  "limits": {"maxIterations": 100000, "targetExploitability": 0.001, "maxMemoryBytes": 268435456, "maxSeconds": 120},
+  "cases": [
+    {"caseId":"turn-checkdown","board":["2c","3d","7h","9s"],"pot":1000,"stack":2000,"ranges":[{"AcAd":0.7,"5c4c":0.3},{"KhKd":1,"8c8d":0.4}],"turnBets":[0,0],"riverBets":[0,0]},
+    {"caseId":"turn-bet-checkdown","board":["2c","3d","7h","9s"],"pot":1000,"stack":2000,"ranges":[{"AcAd":1,"5c4c":1},{"KhKd":1,"8c8d":1}],"turnBets":[500,0],"riverBets":[0,0]},
+    {"caseId":"turn-then-river-response","board":["2c","3d","7h","9s"],"pot":1000,"stack":2000,"ranges":[{"AcAd":1,"5c4c":1},{"KhKd":1,"8c8d":1}],"turnBets":[500,0],"riverBets":[0,700]},
+    {"caseId":"turn-weighted-blockers","board":["2c","3d","7h","9s"],"pot":1400,"stack":2100,"ranges":[{"AcAd":0.7,"KhQc":0.6,"5c4c":0.3},{"AcKc":0.5,"KhKd":1}],"turnBets":[0,500],"riverBets":[700,0]},
+    {"caseId":"turn-allin","board":["Tc","Jc","Qc","Kc"],"pot":1000,"stack":800,"ranges":[{"2h2d":1,"3h3d":0.3},{"4h4d":1,"5h5d":0.8}],"turnBets":[800,0],"riverBets":[0,0]},
+    {"caseId":"turn-suit-inverse","board":["2h","3s","7c","9d"],"pot":1000,"stack":2000,"ranges":[{"AhAs":1,"5h4h":1},{"KcKs":1,"8h8s":1}],"turnBets":[500,0],"riverBets":[0,700]}
+  ]
+}

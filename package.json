@@ -1,0 +1,18 @@
+{
+  "name": "riverline-solver",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "solver:build": "node scripts/solver-tool.mjs build",
+    "solver:check": "node scripts/solver-tool.mjs fmt && node scripts/solver-tool.mjs clippy && node scripts/solver-tool.mjs test",
+    "contracts:check": "node --import tsx scripts/contracts-check.ts",
+    "benchmark:solver:small": "node scripts/solver-benchmark.mjs",
+    "benchmark:solver:tree": "node scripts/solver-benchmark.mjs --tree",
+    "benchmark:solver:turn": "node scripts/solver-turn-benchmark.mjs",
+    "benchmark:solver:flop": "node scripts/solver-flop-benchmark.mjs"
+  },
+  "dependencies": { "zod": "4.6.7" },
+  "devDependencies": { "tsx": "4.23.15" }
+}

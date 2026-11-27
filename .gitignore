@@ -1,0 +1,16 @@
+.venv/
+.venv-*/
+.artifacts/
+.data/
+build/
+dist/
+node_modules/
+**/target/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+*.log
